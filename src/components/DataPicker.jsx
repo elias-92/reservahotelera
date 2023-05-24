@@ -6,22 +6,33 @@ import styled from '@emotion/styled';
 import {Button, InputBase, Typography} from '@mui/material';
 import {People} from '@mui/icons-material';
 import {useNavigate} from 'react-router-dom';
+import {useDispatch, useSelector} from 'react-redux';
+import {selectEnd, setEnd} from '../features/endSlice';
+import {selectStart, setStart} from '../features/startSlice';
 
 const DataPicker = () => {
+	const dispatch = useDispatch();
+	const history = useNavigate();
+	const start = useSelector(selectStart);
+	const end = useSelector(selectEnd);
 	const [state, setState] = useState([
 		{
-			startDate: new Date(),
-			endDate: null,
+			startDate: start,
+			endDate: end,
 			key: 'selection',
 		},
 	]);
-	const history = useNavigate();
+
 	return (
 		<>
 			<StyledRoot>
 				<DateRange
 					editableDateInputs={true}
-					onChange={(item) => setState([item.selection])}
+					onChange={(item) => {
+						setState([item.selection]);
+						dispatch(setStart(item.selection.startDate.getTime()));
+						dispatch(setEnd(item.selection.endDate.getTime()));
+					}}
 					moveRangeOnFirstSelection={false}
 					ranges={state}
 				/>
