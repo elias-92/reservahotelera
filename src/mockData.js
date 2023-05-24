@@ -29,7 +29,7 @@ export const mockData = [
 		description:
 			'The hotel is located in the center of Fuengirola, on the beachfront. A few minutes from the city center, where there are numerous stores, businesses and entertainment venues.',
 		cat: 'room',
-		price: 150,
+		price: 250,
 		stock: 12,
 		notAvailableStart: new Date(2023, 5, 18).getTime(),
 		notAvailableEnd: new Date(2023, 5, 18).getTime(),
@@ -48,7 +48,7 @@ export const mockData = [
 		description:
 			'It is located on the beachfront in Roquetas de Mar, 25 km from the city of Almeria.',
 		cat: 'room',
-		price: 1350,
+		price: 350,
 		stock: 8,
 		notAvailableStart: new Date(2023, 5, 18).getTime(),
 		notAvailableEnd: new Date(2023, 5, 18).getTime(),
@@ -60,7 +60,7 @@ export const mockData = [
 		description:
 			'With a stay at Hotel Marconi, you will be centrally located in Benidorm, on the beach, minutes from Elche Park and close to Mal Pas Beach.',
 		cat: 'room',
-		price: 1650,
+		price: 500,
 		stock: 10,
 		notAvailableStart: new Date(2023, 5, 18).getTime(),
 		notAvailableEnd: new Date(2023, 5, 18).getTime(),
@@ -79,10 +79,10 @@ export const mockData = [
 		description:
 			'The Taurito Princess is located in the valley of Taurito, on the island of Gran Canaria, 25 meters from the beach.',
 		cat: 'room',
-		price: 1400,
+		price: 450,
 		stock: 7,
-		notAvailableStart: new Date(2023, 5, 18).getTime(),
-		notAvailableEnd: new Date(2023, 5, 24).getTime(),
+		notAvailableStart: new Date(2023, 5, 21).getTime(),
+		notAvailableEnd: new Date(2023, 5, 26).getTime(),
 	},
 ];
 

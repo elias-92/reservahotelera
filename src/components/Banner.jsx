@@ -1,13 +1,16 @@
 import styled from '@emotion/styled';
 import {Button, Typography} from '@mui/material';
 import backgroundImg from '../assets/img/banner.jpg';
+import {Link} from 'react-router-dom';
 
 const Banner = () => {
 	return (
 		<StyledRoot>
 			<StyledInfo>
 				<Typography variant="h2">Plan your getaway...</Typography>
-				<Button variant="contained">Check our rooms</Button>
+				<Link to="/search">
+					<Button variant="contained">Check our rooms</Button>
+				</Link>
 			</StyledInfo>
 		</StyledRoot>
 	);

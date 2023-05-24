@@ -25,8 +25,8 @@ const Home = () => {
 				<Banner />
 				<RoomsContainer container spacing={3}>
 					{mockData.map((data) => (
-						<Grid item sm="6" md="4" lg="3">
-							<RoomCard key={data.id} data={data} />
+						<Grid item key={data.id} xs={12} sm={6} md={4} lg={3}>
+							<RoomCard data={data} />
 						</Grid>
 					))}
 				</RoomsContainer>
@@ -48,6 +48,7 @@ const Dates = styled.div`
 `;
 const BtnShowDate = styled(Button)`
 	width: 50%;
+	min-width: 330px;
 	margin: 10px auto;
 	color: #000;
 	background-color: #ff510066;

@@ -33,7 +33,7 @@ const Header = () => {
 		const getDrawerChoises = () => {
 			return headerData.map((data) => {
 				return (
-					<List>
+					<List key={data}>
 						<ListItem>{data}</ListItem>
 					</List>
 				);

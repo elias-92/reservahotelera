@@ -28,10 +28,11 @@ const Root = styled.div`
 `;
 const ImgWrapper = styled.figure`
 	overflow: hidden;
+	border-radius: 10px;
+	margin-bottom: 10px;
 `;
 const ImgMedia = styled.img`
-	height: 400px;
-	width: 600px;
+	min-width: 100%;
 	object-fit: cover;
 	transform: scale(1.1);
 	transition: 0.4s ease-in-out;
